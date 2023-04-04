@@ -27,3 +27,4 @@ arrayOfCategories.forEach(item =>{
     const underItemCount = item.querySelectorAll('li').length;
     console.log(`Category: ${itemName}\nElements: ${underItemCount}`);
 });
+
