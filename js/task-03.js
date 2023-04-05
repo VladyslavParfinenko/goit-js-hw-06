@@ -15,10 +15,17 @@ const images = [
 
 const galleryList = document.querySelector('ul.gallery');
 
-images.forEach(image => {
+
+const createImg = image => {
   const li = document.createElement('li');
   li.insertAdjacentHTML("afterbegin", `<img src="${image.url}" alt="${image.alt}" class="gallery__item">`);
 
+  return li;
 
-  galleryList.append(li);
-});
+};
+
+const imgArray = images.map(createImg);
+
+console.log(imgArray);
+
+galleryList.append(...imgArray);
