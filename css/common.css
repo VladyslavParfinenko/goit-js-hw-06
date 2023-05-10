@@ -25,12 +25,18 @@ button {
 
 .gallery {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  border-color: #212121;
+  margin: 0;
+  padding: 0;
 }
 
-.gallery__item {
-  flex-grow: 1;
-  max-width: 100%;
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-image {
+  width: 500px;
+  height: 300px;
 }
